@@ -7,7 +7,6 @@ import org.quiltmc.config.implementor_api.ConfigEnvironment;
 import org.quiltmc.config.implementor_api.ConfigFactory;
 
 public class ForgeWrapper {
-	@SuppressWarnings("deprecation")
 	private static final ConfigEnvironment CONFIG_ENVIRONMENT = new ConfigEnvironment(FMLPaths.CONFIGDIR.get(), TomlSerializer.INSTANCE, TomlSerializer.INSTANCE);
 
 	public static <C extends ReflectiveConfig> C create(String family, String id, Class<C> configCreatorClass) {

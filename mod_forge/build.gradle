@@ -50,6 +50,10 @@ dependencies {
 	annotationProcessor variantOf(libs.sponge) { classifier("processor") }
 	annotationProcessor libs.mixinextras.common
 
+	compileOnly libs.jetbrains.annotations
+	compileOnly libs.autoservice.annotations
+	annotationProcessor libs.autoservice
+
 	implementation libs.wrench.wrapper
 	jarJar libs.wrench.wrapper
 

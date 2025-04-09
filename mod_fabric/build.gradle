@@ -22,6 +22,10 @@ dependencies {
 
 	modImplementation libs.fabric.api
 
+	compileOnly libs.jetbrains.annotations
+	compileOnly libs.autoservice.annotations
+	annotationProcessor libs.autoservice
+
 	modCompileOnly libs.modmenu
 	modLocalRuntime libs.modmenu
 

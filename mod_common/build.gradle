@@ -16,6 +16,9 @@ dependencies {
 	})
 	modImplementation libs.fabric.loader
 
+	compileOnly libs.jetbrains.annotations
+	compileOnly libs.autoservice.annotations
+
 	compileOnly libs.wrench.wrapper
 }
 
