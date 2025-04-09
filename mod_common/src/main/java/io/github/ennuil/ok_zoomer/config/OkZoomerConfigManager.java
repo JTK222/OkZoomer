@@ -16,7 +16,7 @@ import io.github.ennuil.ok_zoomer.zoom.transitions.SmoothTransitionMode;
 import net.minecraft.resources.ResourceLocation;
 
 public class OkZoomerConfigManager {
-	public static final OkZoomerConfig CONFIG = WrenchWrapper.create(ModUtils.MOD_NAMESPACE, "config", OkZoomerConfig.class);
+	public static final OkZoomerConfig CONFIG = WrenchWrapper.createConfig(ModUtils.MOD_NAMESPACE, "config", OkZoomerConfig.class);
 
 	public static void init() {
 		// On initialization, configure our zoom instance
